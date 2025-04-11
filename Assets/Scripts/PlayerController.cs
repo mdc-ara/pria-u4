@@ -33,8 +33,6 @@ public class PlayerController : MonoBehaviour
             xDifference *= moveSpeed;
             newXposition = Mathf.Clamp(clickedPlayerX+xDifference,-maxX, maxX);
             transform.position = new Vector2(newXposition,transform.position.y);
-            Debug.Log("X difference = " + xDifference);
-
         }
     }
 }
